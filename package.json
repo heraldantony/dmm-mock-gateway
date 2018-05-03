@@ -1,0 +1,36 @@
+{
+  "name": "dc-mock-gateway",
+  "version": "1.0.0",
+  "description": "Data server to serve dummy data ",
+  "main": "index.js",
+  "homepage": "https://github.com/heraldantony/dc-mock-gateway",
+  "scripts": {
+    "dev": "webpack --mode development ./src/server/index.js --output ./dist/server.js",
+    "dev-client": "webpack --mode development ./src/client/index.js --output ./dist/client.js",
+    "build": "webpack --mode production ./src/server/index.js --output ./dist/server.js",
+    "build-client": "webpack --mode production ./src/client/index.js --output ./dist/client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Herald Antony",
+    "email": "herald.antony@zoho.com"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "python-shell": "^0.5.0",
+    "socket.io": "^2.1.0",
+    "socket.io-client": "^2.1.0",
+    "uws": "^9.148.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  },
+  "license": "ISC"
+}
