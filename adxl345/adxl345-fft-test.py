@@ -13,7 +13,7 @@ from StringIO import StringIO
   
 def getFFTDataDummy(gforce = False, durationInSecs = 10, rateInHz = 1, outFile = "test-fft.csv"):
         f = open(outFile, 'w')
-        inp = open('fft.out', 'r')
+        inp = open('adxl345/fft.out', 'r')
         strData=inp.read()
         #strData="%f,%f,%f,%f,%d\n" % (10,20,durationInSecs,rateInHz,1000)
         #f.write(strData)
